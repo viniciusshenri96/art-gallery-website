@@ -6,5 +6,5 @@
 </h1>
 
 <h4 align="center"> 
-	🚧 Art gallery websitee ⏳ Em desenvolvimento 🚀 🚧
+	🚧 Art gallery website ⏳ Em desenvolvimento 🚀 🚧
 </h4>
