@@ -1,0 +1,209 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300;800&display=swap");
+
+/* VARIABLES CSS */
+:root {
+  /* colors */
+  --color-gold: #d5966c;
+  --color-almostBlack: #151515;
+  --color-darkGrey: #444444;
+  --color-white: #ffffff;
+
+  /* Font weight */
+  --fw-black: 900;
+  --fw-light: 300;
+
+  /* line height */
+  --lh-title-big: 0.92;
+  --lh-normal: 1;
+  --lh-body-m: 1.56;
+  --lh-body-s: 1.45;
+
+  /* font size */
+  --font-xl: 9.6rem;
+  --font-l: 7rem;
+  --font-m: 6rem;
+  --font-s: 3.6rem;
+  --font-body-m: 2.2rem;
+  --font-body-s: 1.8rem;
+}
+
+/* BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-white);
+  line-height: var(--lh-normal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+/* TYPOGRAPHY */
+.font-xl {
+  font: var(--fw-black) var(--font-xl) / var(--lh-title-big)
+      "Big Shoulders Display",
+    cursive;
+}
+
+.font-l {
+  font: var(--fw-black) var(--font-l) / var(--lh-normal) "Big Shoulders Display",
+    cursive;
+}
+
+.font-m {
+  font: var(--fw-black) var(--font-m) / var(--lh-normal) "Big Shoulders Display",
+    cursive;
+}
+
+.font-s {
+  font: var(--fw-black) var(--font-s) / var(--lh-normal) "Big Shoulders Display",
+    cursive;
+}
+
+.font-body-m {
+  font: var(--fw-light) var(--font-body-m) / var(--lh-body-m) "Outfit",
+    sans-serif;
+}
+
+.font-body-s {
+  font: var(--fw-light) var(--font-body-s) / var(--lh-body-s) "Outfit",
+    sans-serif;
+}
+
+/* Buttons */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font: 800 2rem/1.25 "Big Shoulders Display";
+  background-color: var(--color-almostBlack);
+  color: var(--color-white);
+  padding: 2.4rem 3.5rem 2.4rem 3.2rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-gold);
+}
+
+/* reusable classes */
+.container {
+  max-width: 119rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 18rem;
+}
+.section-hero {
+  max-width: 127.5rem;
+  display: grid;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: start;
+  gap: 24.6rem;
+  grid-area: 1 / -1;
+  padding-top: 19rem;
+  padding-top: 19rem;
+  padding-left: 16.5rem;
+  padding-right: 4rem;
+}
+
+.btn--right {
+  grid-column: 2;
+}
+
+.hero-title {
+  background: linear-gradient(
+    to left,
+    var(--color-almostBlack) 36.5%,
+    var(--color-white) 36.5%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+}
+
+.hero-info {
+  max-width: 84%;
+  justify-self: end;
+}
+.hero-desc {
+  margin-bottom: 6.4rem;
+}
+
+.hero-bg {
+  display: flex;
+  z-index: -1;
+  grid-area: 1/ 1;
+}
+.hero-bg-black {
+  width: 45rem;
+  height: 80rem;
+}
+
+.hero-bg-black {
+  background-color: var(--color-almostBlack);
+}
+
+.hero-bg-img {
+  width: 54rem;
+  height: 80rem;
+  background: url(../img/desktop/image-hero.jpg);
+}
+
+@media (min-width: 1460px) {
+  .section-hero {
+    margin: 0 auto;
+  }
+}
+
+/*
+@media (max-width: 1200px) {
+  .hero-content {
+    gap: 10rem;
+    left: 25px;
+  }
+  .hero-bg-black {
+    width: 35rem;
+  }
+  .hero-bg-img {
+    width: 40rem;
+    height: 80rem;
+    background-position-x: center;
+  }
+} */
+
+/* GALLERY */
