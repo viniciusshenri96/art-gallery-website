@@ -1,5 +1,5 @@
 /* GOOGLE FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap");
 
 /* VARIABLES CSS */
 :root {
@@ -10,6 +10,7 @@
   --color-white: #ffffff;
 
   /* Font weight */
+  --fw-ExtraBold: 800;
   --fw-black: 900;
   --fw-light: 300;
 
@@ -58,6 +59,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   overflow-x: hidden;
+  height: 100%;
 }
 
 /* TYPOGRAPHY */
@@ -100,7 +102,7 @@ body {
   background-color: var(--color-almostBlack);
   color: var(--color-white);
   padding: 24px 35px 24px 32px;
-  letter-spacing: 3.64px;
+  letter-spacing: 3.63636px;
 }
 
 .btn:hover,

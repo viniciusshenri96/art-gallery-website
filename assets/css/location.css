@@ -86,3 +86,8 @@
 .footer-icon path {
   fill: #151515;
 }
+
+.footer-link:hover,
+.footer-link:hover svg path {
+  fill: var(--color-gold);
+}
