@@ -1,3 +1,23 @@
+.btn--left:link,
+.btn--left:active {
+  position: relative;
+}
+
+.btn--left::before {
+  content: "";
+  width: 56px;
+  height: 72px;
+  background: url(../img/icon-arrow-left.svg) no-repeat center center,
+    var(--color-gold);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+.btn--left:hover::before {
+  background-color: var(--color-almostBlack);
+}
+
 .section-map {
   display: grid;
 }

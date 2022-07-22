@@ -1,57 +1,31 @@
-.header {
-  max-width: 1315px;
-  /* padding-right: 16px; */
-  display: grid;
-  margin-bottom: 180px;
-}
-.header-bg {
-  max-width: 990px;
-  height: 800px;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
+.btn--right:link,
+.btn--right:active {
   position: relative;
-  top: 0px;
-  z-index: -1;
-  grid-area: 1 / -1;
 }
 
-.header-bg-black {
+.btn--right::after {
+  content: "";
+  width: 56px;
+  height: 72px;
+  background: url(../img/icon-arrow-right.svg) no-repeat center center,
+    var(--color-gold);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+.btn--right:hover::after {
   background-color: var(--color-almostBlack);
 }
-.header-bg-img {
-  background-image: url(../img/desktop/image-hero.jpg);
-}
 
-.section-hero {
-  max-width: 1275px;
-  display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  grid-area: 1 / -1;
-  padding-top: 196px;
-  padding-left: 165px;
-}
-.section-hero p {
-  margin-bottom: 64px;
-}
-.hero-title {
-  background: linear-gradient(
-    to left,
-    var(--color-almostBlack) 60.3%,
-    var(--color-white) 36.5%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-}
-.hero-desc {
-  max-width: 350px;
-}
 .section-gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
+  /* justify-items: end; */
   align-items: center;
   margin-bottom: 180px;
+  overflow: hidden;
 }
 
 .gallery-day {
@@ -59,20 +33,22 @@
   margin-right: 95px;
 }
 .gallery-img-one {
-  width: 100%;
+  width: 635px;
   height: 400px;
   background: url(../img/desktop/image-grid-1.jpg) no-repeat;
   background-size: cover;
   grid-column: 3 / -1;
+  justify-self: end;
+  transition: all 0.3s;
 }
 
 .gallery-img-two {
-  width: 100%;
   height: 720px;
   background: url(../img/desktop/image-grid-2.jpg) no-repeat;
   background-size: cover;
   grid-column: 1 / span 3;
   grid-row: span 4;
+  transition: all 0.3s;
 }
 
 .gallery-inspired {
@@ -87,12 +63,12 @@
 }
 
 .gallery-img-three {
-  width: 100%;
   height: 313px;
   background: url(../img/desktop/image-grid-3.jpg) no-repeat;
   background-size: cover;
   grid-row: 2;
   grid-column: 4 / -1;
+  transition: all 0.3s;
 }
 
 .footer-bg {
@@ -122,7 +98,12 @@
   color: var(--color-white);
 }
 
-@media (min-width: 1448px) {
+.footer-item:hover,
+.footer-item:hover svg path {
+  fill: var(--color-gold);
+}
+
+/* @media (min-width: 1448px) {
   .header {
     margin: 0 auto 180px auto;
   }
@@ -149,4 +130,4 @@
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
   }
-}
+} */
