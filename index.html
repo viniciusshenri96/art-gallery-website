@@ -17,7 +17,11 @@
   <header class="header">
     <section class="section-hero container">
       <div class="header-bg">
-        <img class="header-img" src="./assets/img/desktop/image-hero.jpg" alt="">
+        <picture>
+          <!-- <source srcset="./assets/img/mobile/image-hero.jpg" media="(max-width: 700px)"> -->
+          <source srcset="./assets/img/tablet/image-hero.jpg" media="(max-width: 990px)">
+          <img class="header-img" src="./assets/img/desktop/image-hero.jpg" alt="">
+        </picture>
       </div>
 
       <div class="hero-info">
@@ -43,14 +47,20 @@
       </div>
 
       <picture class="gallery-img-one">
+        <source srcset="./assets/img/mobile/image-grid-1.jpg" media="(max-width: 700px)">
+        <source srcset="./assets/img/tablet/image-grid-1.jpg" media="(max-width: 990px)">
         <img src="./assets/img/desktop/image-grid-1.jpg" alt="">
       </picture>
 
       <picture class="gallery-img-two">
-        <img src="./assets/img/desktop/image-grid-2.jpg" alt="">
+        <!-- <source srcset="./assets/img/mobile/image-grid-2.jpg" media="(max-width: 700px)"> -->
+        <source srcset="./assets/img/tablet/image-grid-2.jpg" media="(max-width: 800px)">
+        <img src=" ./assets/img/desktop/image-grid-2.jpg" alt="">
       </picture>
 
       <picture class="gallery-img-three">
+        <!-- <source srcset="./assets/img/mobile/image-grid-3.jpg" media="(max-width: 700px)"> -->
+        <source srcset="./assets/img/tablet/image-grid-3.jpg" media="(max-width: 990px)">
         <img src="./assets/img/desktop/image-grid-3.jpg" alt="">
       </picture>
 
