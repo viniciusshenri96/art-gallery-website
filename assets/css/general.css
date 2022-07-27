@@ -33,7 +33,9 @@
   :root {
     /* font size */
     --font-xl: 4.375rem;
+    --font-l: 3.438rem;
     --font-m: 3.125rem;
+    --font-s: 2rem;
     --font-body-m: 1.125rem;
     --font-body-s: 1rem;
 
