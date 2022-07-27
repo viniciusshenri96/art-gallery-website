@@ -14,44 +14,46 @@
   --fw-black: 900;
   --fw-light: 300;
 
+  /* font size */
+  --font-xl: 6rem;
+  --font-l: 4.375rem;
+  --font-m: 3.75rem;
+  --font-s: 2.25rem;
+  --font-body-m: 1.375rem;
+  --font-body-s: 1.125rem;
+
   /* line height */
   --lh-title-big: 0.92;
   --lh-normal: 1;
-  --lh-body-m: 1.56;
-  --lh-body-s: 1.45;
-
-  /* font size */
-  --font-xl: 96px;
-  --font-l: 70px;
-  --font-m: 60px;
-  --font-s: 36px;
-  --font-body-m: 22px;
-  --font-body-s: 18px;
+  --lh-body-m: 1.45;
+  --lh-body-s: 1.56;
 }
 
 @media (max-width: 990px) {
   :root {
-    --font-xl: 70px;
-    --font-m: 50px;
-    --font-body-m: 18px;
-    --font-body-s: 16px;
+    /* font size */
+    --font-xl: 4.375rem;
+    --font-m: 3.125rem;
+    --font-body-m: 1.125rem;
+    --font-body-s: 1rem;
 
-    --lh-normal: 0.9;
+    /* line height */
+    --lh-title-big: 0.93;
     --lh-body-s: 1.62;
+    --lh-normal: 0.9;
+    --lh-body-m: 1.56;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   :root {
-    --font-xl: 60px;
+    /* font size */
+    --font-xl: 3.75rem;
+
+    /* line height */
+    --lh-title-big: 0.92;
   }
 }
-
-/* @media (max-width: 700px) {
-  :root {
-    --font-xl: 60px;
-  }
-} */
 
 /* BASE */
 * {
@@ -72,6 +74,11 @@ img {
   display: block;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -82,7 +89,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   overflow-x: hidden;
-  height: 100%;
 }
 
 /* TYPOGRAPHY */
@@ -121,11 +127,12 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
-  font: 800 20px/1.2 "Big Shoulders Display";
+  font: 800 1.25rem/1.2 "Big Shoulders Display";
   background-color: var(--color-almostBlack);
   color: var(--color-white);
-  padding: 24px 35px 24px 32px;
-  letter-spacing: 3.63636px;
+  padding: 1.5rem 2.2rem 1.5rem 2rem;
+  letter-spacing: 0.228rem;
+  white-space: nowrap;
 }
 
 .btn:hover,
@@ -135,21 +142,22 @@ body {
 
 /* reusable classes */
 .container {
-  max-width: 1190px;
-  padding: 0 40px;
+  max-width: 74.375rem;
+  padding: 0 2.5rem;
   margin: 0 auto;
 }
 
 .uppercase {
   text-transform: uppercase;
 }
+
 .font-m--bottom {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .footer-bg {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .footer {
@@ -158,18 +166,21 @@ body {
 }
 
 .footer-logo {
-  height: 58px;
-  margin-right: 140px;
+  width: 10rem;
+  height: 3.625rem;
+  margin-right: 8.75rem;
 }
 
 .footer-redes {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   margin-left: auto;
 }
 
 @media (max-width: 990px) {
   .footer-logo {
+    width: 110px;
+    height: 40px;
     margin-right: 65px;
   }
 }

@@ -1,6 +1,7 @@
 .btn--left:link,
 .btn--left:active {
   position: relative;
+  z-index: 500;
 }
 
 .btn--left::before {
@@ -22,6 +23,10 @@
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
+}
+
+#map {
+  height: 600px;
 }
 
 .map-img {
@@ -57,6 +62,8 @@
   background-color: var(--color-gold);
 }
 
+.footer-logo,
+.footer-link svg path,
 .footer-icon path {
   fill: #151515;
 }
@@ -68,6 +75,20 @@
 
 @media (max-width: 1200px) {
   .btn--left {
-    margin-left: 0;
+    margin-left: 180px;
+  }
+}
+@media (max-width: 700px) {
+  .location-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .location-content h1 {
+    font-size: 55px;
+    line-height: 0.9;
+  }
+
+  #map {
+    width: 768px;
   }
 }
