@@ -29,34 +29,6 @@
   --lh-body-s: 1.56;
 }
 
-@media (max-width: 990px) {
-  :root {
-    /* font size */
-    --font-xl: 4.375rem;
-    --font-l: 3.438rem;
-    --font-m: 3.125rem;
-    --font-s: 2rem;
-    --font-body-m: 1.125rem;
-    --font-body-s: 1rem;
-
-    /* line height */
-    --lh-title-big: 0.93;
-    --lh-body-s: 1.62;
-    --lh-normal: 0.9;
-    --lh-body-m: 1.56;
-  }
-}
-
-@media (max-width: 700px) {
-  :root {
-    /* font size */
-    --font-xl: 3.75rem;
-
-    /* line height */
-    --lh-title-big: 0.92;
-  }
-}
-
 /* BASE */
 * {
   box-sizing: border-box;
@@ -125,7 +97,7 @@ body {
     sans-serif;
 }
 
-/* Buttons */
+/* BUTTONS */
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -137,12 +109,18 @@ body {
   white-space: nowrap;
 }
 
+.btn:focus,
+.btn:focus-visible {
+  outline: 0.1875rem dotted #151515;
+  outline-offset: 0.3125rem;
+}
+
 .btn:hover,
 .btn:active {
   background-color: var(--color-gold);
 }
 
-/* reusable classes */
+/* REUSABLE CLASSES */
 .container {
   max-width: 74.375rem;
   padding: 0 2.5rem;
@@ -157,6 +135,7 @@ body {
   margin-bottom: 2rem;
 }
 
+/* FOOTER COMPONENT */
 .footer-bg {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -167,6 +146,7 @@ body {
   grid-template-columns: auto 1.1fr 1fr;
 }
 
+.footer-link-logo,
 .footer-logo {
   width: 10rem;
   height: 3.625rem;
@@ -179,7 +159,37 @@ body {
   margin-left: auto;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 990px) {
+  :root {
+    /* font size */
+    --font-xl: 4.375rem;
+    --font-l: 3.438rem;
+    --font-m: 3.125rem;
+    --font-s: 2rem;
+    --font-body-m: 1.125rem;
+    --font-body-s: 1rem;
+
+    /* line height */
+    --lh-title-big: 0.93;
+    --lh-body-s: 1.62;
+    --lh-normal: 0.9;
+    --lh-body-m: 1.56;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    /* font size */
+    --font-xl: 3.75rem;
+
+    /* line height */
+    --lh-title-big: 0.92;
+  }
+  .container {
+    padding: 0 16px;
+  }
+
   .footer-logo {
     width: 110px;
     height: 40px;
@@ -188,12 +198,6 @@ body {
 }
 
 @media (max-width: 700px) {
-  .container {
-    padding: 0 16px;
-  }
-}
-
-@media (max-width: 600px) {
   .container {
     padding: 0 16px;
   }
@@ -216,6 +220,7 @@ body {
     margin-left: 0;
   }
 }
+
 @media (max-width: 320px) {
   :root {
     --font-xl: 40px;
