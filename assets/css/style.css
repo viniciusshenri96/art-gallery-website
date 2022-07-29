@@ -48,8 +48,6 @@
 }
 .btn--right:link,
 .btn--right:visited {
-  justify-content: flex-start;
-
   width: 16.25rem;
 
   /* arrow background with box-shadow, could also be done with pseudo-element */
@@ -89,7 +87,6 @@
 .gallery-img-one {
   grid-column: span 2;
   justify-self: end;
-  overflow: hidden;
 }
 
 .gallery-img-one img {
@@ -175,7 +172,7 @@
 
 @media (max-width: 62em) {
   .hero-bg {
-    transform: translateX(-125px);
+    transform: translateX(-7.813rem);
   }
 
   .hero-bg::before {
@@ -223,7 +220,7 @@
 
   .hero-bg {
     display: inline-block;
-    transform: translateX(-40px);
+    transform: translateX(-2.5rem);
   }
 
   .hero-bg::before {
@@ -369,10 +366,15 @@
   .hero-img {
     height: 11.25rem;
   }
-  .btn--right::after {
-    height: 100%;
-  }
+
   .gallery-inspired {
     padding: 1.5rem;
+  }
+  .btn--right:link,
+  .btn--right:visited {
+    width: 12.5rem;
+    padding-left: 1rem;
+    padding-right: 1.125rem;
+    font-size: 0.875rem;
   }
 }

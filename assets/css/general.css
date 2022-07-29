@@ -36,7 +36,8 @@
   padding: 0;
 }
 
-*:focus {
+*:focus,
+*:focus-visible {
   outline: #646464 dotted 4px;
   outline-offset: 4px;
 }
@@ -68,6 +69,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   overflow-x: hidden;
+  line-height: 1.5;
+  /* improves text rendering */
+  -webkit-font-smoothing: antialiased;
 }
 
 /* TYPOGRAPHY */
@@ -111,7 +115,7 @@ body {
   background-color: var(--color-almostBlack);
   color: var(--color-white);
   padding: 1.5rem 2.2rem 1.5rem 2rem;
-  display: flex;
+  display: grid;
   align-items: center;
 }
 
@@ -233,6 +237,8 @@ body {
   :root {
     --font-xl: 2.5rem;
     --font-m: 2.5rem;
+
+    --font-body-m: 1.2rem;
   }
   .btn:link,
   .btn:visited {

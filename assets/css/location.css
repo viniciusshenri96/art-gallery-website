@@ -10,7 +10,7 @@
   width: 16.5rem;
   box-shadow: inset 56px 0px var(--color-gold);
 
-  left: 13.25rem;
+  left: 9.75rem;
 
   position: relative;
   z-index: 450;
@@ -40,7 +40,7 @@
 .location-content {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 220px;
+  gap: 13.75rem;
 }
 
 .location-title {
@@ -81,16 +81,18 @@
   }
 }
 
+@media (max-width: 62em) {
+  .location-title {
+    max-width: 13.75rem;
+  }
+}
+
 @media (max-width: 50em) {
   .section-location {
     padding: 5.5rem 0 5rem 0;
   }
   .location-content {
     gap: 68px;
-  }
-
-  .location-title {
-    max-width: 220px;
   }
 
   .location-adress address,
@@ -126,5 +128,13 @@
   }
   .btn--left::before {
     height: 100%;
+  }
+
+  .btn--left:link,
+  .btn--left:visited {
+    width: 12.5rem;
+    padding-left: 1rem;
+    padding-right: 1.125rem;
+    font-size: 0.875rem;
   }
 }
