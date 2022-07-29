@@ -38,7 +38,7 @@
 
 .hero-desc-box {
   max-width: 350px;
-  /* padding-right: 40px; */
+  padding-right: 40px;
 }
 
 .hero-desc {
@@ -132,7 +132,6 @@
   fill: var(--color-gold);
 }
 
-/* MEDIA QUERIES */
 @media (max-width: 1200px) {
   .hero-desc-box {
     padding-right: 40px;

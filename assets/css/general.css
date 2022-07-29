@@ -109,12 +109,6 @@ body {
   white-space: nowrap;
 }
 
-.btn:focus,
-.btn:focus-visible {
-  outline: 0.1875rem dotted #151515;
-  outline-offset: 0.3125rem;
-}
-
 .btn:hover,
 .btn:active {
   background-color: var(--color-gold);
@@ -146,8 +140,8 @@ body {
   grid-template-columns: auto 1.1fr 1fr;
 }
 
-.footer-link-logo,
-.footer-logo {
+.footer-logo,
+.footer-link-logo {
   width: 10rem;
   height: 3.625rem;
   margin-right: 8.75rem;
@@ -186,11 +180,9 @@ body {
     /* line height */
     --lh-title-big: 0.92;
   }
-  .container {
-    padding: 0 16px;
-  }
 
-  .footer-logo {
+  .footer-logo,
+  .footer-link-logo {
     width: 110px;
     height: 40px;
     margin-right: 65px;
