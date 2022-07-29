@@ -40,7 +40,7 @@ _Art gallery website_ - Two page art gallery project.
 
 ## **About:**
 
-     This project is a challenge of the two-page Mentor frontend site, where as one of the objectives was to leave the layout adaptable for all types of screen (responsive) and i also used Leaflet JS to create an interactive location map with custom location pin.
+This project is a challenge of the two-page Mentor frontend site, where as one of the objectives was to leave the layout adaptable for all types of screen (responsive) and i also used Leaflet JS to create an interactive location map with custom location pin.
 
 ---
 
@@ -100,7 +100,7 @@ The following tools were used in building the project:
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilities**
 
-- Figma: **[Hero icons](https://www.figma.com)**
+- Figma
 - Fontes: **[Big Shoulders Display, Outfit]()**
 
 ---
