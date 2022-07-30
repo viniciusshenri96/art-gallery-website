@@ -115,7 +115,7 @@ body {
   background-color: var(--color-almostBlack);
   color: var(--color-white);
   padding: 1.5rem 2.2rem 1.5rem 2rem;
-  display: grid;
+  display: flex;
   align-items: center;
 }
 
