@@ -36,6 +36,8 @@
   padding: 0;
 }
 
+/* better for people who browse with the keyboard and know where they are on the site, so I set a different style, making it more visible, taking it from the default.
+ */
 *:focus,
 *:focus-visible {
   outline: #646464 dotted 4px;
@@ -67,6 +69,7 @@ body {
   background-color: var(--color-white);
   line-height: var(--lh-normal);
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-darkGrey);
   position: relative;
   overflow-x: hidden;
   line-height: 1.5;
@@ -89,6 +92,7 @@ body {
 .font-m {
   font: var(--fw-black) var(--font-m) / var(--lh-normal) "Big Shoulders Display",
     cursive;
+  color: var(--color-almostBlack);
 }
 
 .font-s {

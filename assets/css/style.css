@@ -50,7 +50,7 @@
 .btn--right:visited {
   width: 16.25rem;
 
-  /* arrow background with box-shadow, could also be done with pseudo-element, I did this, just to practice
+  /* arrow background with box-shadow, could also be done with pseudo-element in CSS, I did it like this, just for practice.
  */
   box-shadow: inset -56px 0px var(--color-gold);
 

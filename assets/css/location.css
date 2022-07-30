@@ -58,7 +58,9 @@
 .footer-bg {
   background-color: var(--color-gold);
 }
-
+.footer p {
+  color: var(--color-almostBlack);
+}
 .footer-logo,
 .footer-link svg path {
   fill: var(--color-almostBlack);
