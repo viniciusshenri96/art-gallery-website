@@ -117,6 +117,9 @@
   color: var(--color-white);
   padding: 4.063rem 3rem 4rem 3rem;
 }
+.gallery-inspired h2 {
+  color: var(--color-white);
+}
 
 /* small animation */
 @keyframes moveInLeft {
