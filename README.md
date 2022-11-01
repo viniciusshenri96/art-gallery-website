@@ -1,9 +1,19 @@
-<h1 align="center">Art gallery website</h1>
+<h1 align="center">Art gallery website
+</h1>
+
+<div align="left">
+
+<img alt="License" align="center" src="https://img.shields.io/github/license/vanzasetia/art-gallery-website?color=green&style=for-the-badge&logo=github">
+
+</div>
+
+&nbsp;
 
 ![](./readme/art-gallery.jpg)
 
 <h2 align="center"> 
 	🚧 Art gallery website 🟢 Completed 🚀 🚧
+  
 </h2>
 
 &nbsp;
@@ -12,8 +22,6 @@
 ## Table of contents
 
 - [Project description](#description) - [What I learned](#What-I-learned) -->
-
-&nbsp;
 
 <h2 id="#description">Project description 📚</h2>
 
@@ -70,7 +78,7 @@ navigator.geolocation.getCurrentPosition(
 
 ## Links
 
-- [Preview Site](https://your-live-site-url.com)
+- [Preview Site](https://viniciusshenri96.github.io/art-gallery-website/)
 - [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/challenge-completed-with-htmlcssleaflet-jsgrid-and-responsive--kw3kKedNp)
 
 &nbsp;
