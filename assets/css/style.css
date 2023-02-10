@@ -1,3 +1,31 @@
+.skip-content {
+  font-size: 1.25rem;
+  background: var(--color-darkGrey);
+  color: var(--color-white);
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  top: 3rem;
+  padding: 1.25rem 2.5rem;
+  text-decoration: 0.1rem solid;
+  transform: translateX(-200%);
+  z-index: 800;
+  opacity: 1;
+}
+
+.skip-content:focus,
+.skip-content:focus-visible {
+  outline: 0.25rem solid var(--color-darkCyan);
+  outline-offset: 0.25rem;
+  transform: translate(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skip-content {
+    transition: transform 0.3s ease, color 200ms ease-in-out;
+  }
+}
+
 /* =============HEADER/HERO============= */
 .header {
   margin-bottom: 11.25rem;
